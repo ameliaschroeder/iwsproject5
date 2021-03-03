@@ -1,0 +1,68 @@
+<!-- Amelia Schroeder 
+     Project 1b (html portion)
+     Due Date: Jan 20, 2021
+     Submission date: Jan 20, 2021 -->
+
+<link rel="stylesheet" href="stylesheetschroeder1.css">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Schroeder Project 1b</title>
+    <div class="banner" id="projban">
+        <p class="bannerName"> Amelia Schroeder</p>
+        <h3 class="bannerProjName">IT 238 Project 1b: Perform Calculation, Part B</h3>
+        <div id="bannerPageLinks">
+            <a href="index.html" class="bannerLink" id="homeLink">Homepage</a>
+            <a href="proj1aschroeder.html" class="bannerLink">Project 1a</a>
+            <a href="proj1bschroeder.html" class="bannerLink">Project 1b</a>
+            <a href="proj2aschroeder.html" class="bannerLink">Project 2a</a>
+            <a href="proj2bschroeder.html" class="bannerLink">Project 2b</a>
+            <a href="proj3schroeder.html" class="bannerLink">Project 3</a>
+            <a href="proj4schroeder.html" class="bannerLink">Project 4</a>
+        </div>
+    </div>
+</head>
+
+<body>
+    <div id="proj1">
+        <h3>Calculate the Distance Covered by a Projectile</h3>
+        <!--input fields-->
+        <div id="ctrls">
+
+            <!--x-->
+            <label for="xinit">Initial x Position (Distance From Origin) </label><br>
+            <input type="text" class="number" id="xinit">
+            <label for="xinit">meters</label><br><br>
+
+            <!--t-->
+            <label for="time">Time Elapsed</label><br>
+            <input type="text" class="number" id="time">
+            <label for="time">seconds</label><br><br>
+
+            <!--v-->
+            <label for="vel">Initial Velocity</label><br>
+            <input type="text" class="number" id="vel">
+            <label for="vel">m/s</label><br><br>
+
+            <!--a-->
+            <label for="accel">Acceleration</label><br>
+            <input type="text" class="number" id="accel">
+            <label for="accel">m/s<sup>2</sup></label><br><br>
+
+            <hr><br>
+
+            <!--button-->
+            <button id="btn">Calculate Position</button><br><br>
+            <label for="calc">x=</label>
+            <input type="text" class="number" id="calc1b">
+            <label for="calc">meters</label>
+
+        </div>
+        <!--link to script-->
+        <script src="proj1bschroeder.js"></script>
+    </div>
+</body>
+
+</html>

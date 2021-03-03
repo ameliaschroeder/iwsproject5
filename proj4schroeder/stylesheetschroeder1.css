@@ -1,0 +1,348 @@
+/*
+    Amelia Schroeder 
+    IT 238 stylesheet 
+    Updated for Project 4 on Feb 26, 2021*/
+
+html {
+    background-color: #CAD9CF;
+    margin: auto;
+}
+
+header {
+    background-color: #4D7559;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headtxt {
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+}
+
+.banner {
+    height: auto;
+    background-color: #4D7559;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#homeban {
+    width: 100%;
+}
+
+#projban {
+    width: 98%;
+}
+
+.bannerProjName {
+    color: #CAD9CF;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bannerName {
+    font-family: sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    margin: 0px;
+    font-weight: bold;
+    color: #CAD9CF;
+    margin-bottom: 0px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+a.bannerLink {
+    width: 14.2%;
+    height: 17px;
+    float: left;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    color: #CAD9CF;
+    font-family: sans-serif;
+    border-right: 0.5px solid #CAD9CF;
+}
+
+#bannerPageLinks {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #385440;
+    height: 20px;
+    width: 100%;
+}
+
+/* #homeLink {} */
+
+#projdirectory {
+    width: 81%;
+    padding: 1%;
+    float: right;
+}
+
+p {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+#bio {
+    width: 15%;
+    padding: 1%;
+    float: left;
+}
+
+#profilepic {
+    width: 100%;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #CAD9CF;
+}
+
+h2 {
+    font-family: sans-serif;
+    color: #CAD9CF;
+}
+
+h3 {
+
+    font-family: sans-serif;
+    color: #4D7559;
+}
+
+h4 {
+    font-family: sans-serif;
+    color: #4D7559;
+}
+
+/*project label in index*/
+#plabel {
+    color: #4D7559;
+    width: 90px;
+    height: 30px;
+    font-family: sans-serif;
+}
+
+a {
+    font-family: monospace;
+    font-size: 17px;
+}
+
+#homecontent {
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+/*Project 1a*/
+#calc1a {
+    font-family: monospace;
+    font-size: 17px;
+    color: #4D7559;
+
+}
+
+#ctrls {
+    font-family: monospace;
+    font-size: 17px;
+    padding: 20px;
+    border: 3px;
+    border-color: #4D7559;
+}
+
+button {
+    font-family: monospace;
+    font-size: 15px;
+}
+
+hr {
+    border: 1px solid #4D7559;
+}
+
+input.number {
+    font-family: monospace;
+    font-size: 17px;
+    border: 1px solid #4D7559;
+    width: 100px;
+}
+
+#calc1b {
+    border: none;
+    text-align: right;
+    background-color: #CAD9CF;
+    display: inline-block;
+}
+
+/*Project 1b*/
+#proj1 {
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+/*Project 2a*/
+textarea {
+    overflow-y: scroll;
+    resize: none;
+    height: 100px;
+    width: 300px;
+}
+
+.alabel {
+    font-family: monospace;
+    font-size: 17px;
+    margin: 10px;
+}
+
+input.longString {
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#cityLookup {
+    width: 47.75%;
+    float: left;
+    text-align: center;
+    margin: auto;
+    padding: 1%;
+}
+
+#cityLookup.textfield {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cityInfo {
+    width: 47.75%;
+    float: left;
+    text-align: center;
+    margin: auto;
+    padding: 1%
+}
+
+#cityLookup.textfield {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#v1 {
+    border-right: 0.25px solid #4D7559;
+    height: 480px;
+    width: 0px;
+    display: inline-block;
+    float: left;
+}
+
+/*lotto ball images*/
+.lotto_pic {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #4D7559;
+    display: block;
+    float: left;
+    margin: 5px;
+}
+
+#lotto_btn {
+    display: block;
+    margin: auto;
+}
+
+#lottery {
+    display: block;
+    width: 600px;
+    margin: auto;
+    color: #4D7559;
+    text-align: center;
+}
+
+
+/*proj2b*/
+.filelabel {
+    font-family: sans-serif;
+    color: #4D7559;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#file {
+    font-family: monospace;
+    font-size: 15px;
+    display: block;
+    margin: auto;
+    align-content: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#fileul {
+    /*The file upload div*/
+    width: 20%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+li {
+    font-family: monospace;
+    font-size: 16px;
+    color: #CAD9CF;
+    display: block;
+    padding: 5px;
+}
+
+.answers {
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
+
+.question {
+    display: block;
+    width: 90%;
+    float: left;
+}
+
+.hintdiv {
+    display: block;
+    width: 100%;
+}
+
+#submit_btn {
+    display: block;
+    margin: auto;
+    width: 20%;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#quizdiv {
+    background-color: #385440;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+#quizName {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5%;
+    text-align: center;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amelia Schroeder Project 5</title>
+    <script src="proj5schroeder.js"></script>
+</head>
+
+<body>
+    <form name="orderForm" action="http://ectweb.cs.depaul.edu/sjost/receipt.php" method="POST">
+        <h3>Contact Information</h3>
+
+        <!--email input section-->
+        <div id="emailInput">
+            <label for="email">Email Address</label><br>
+            <input type="text" class="formInput" id="email" name="email">
+        </div>
+
+        <h3>Shipping Address</h3>
+
+        <!--first name input section-->
+        <div id="fnInput">
+            <label for="firstName">First Name</label> <br>
+            <input type="text" class="formInput" id="firstName" name="firstName">
+        </div>
+
+
+        <!--last name input section-->
+        <div id="lnInput">
+            <label for="lastName">Last Name</label><br>
+            <input type="text" class="formInput" id="lastName" name="lastName">
+        </div>
+
+        <!--Address Line 1 input Section -->
+        <div id="add1Input">
+            <label for="add1">Address</label><br>
+            <input type="text" class="formInput" id="add1" name="add1">
+        </div>
+
+        <!--Address Line 2 input section (not required)-->
+        <div id="add2Input">
+            <label for="add2">Apartment, suite, etc. (optional)</label><br>
+            <input type="text" class="formInput" id="add2" name="add2">
+        </div>
+
+        <!--city input section-->
+        <div id="cityInput">
+            <label for="city">City</label><br>
+            <input type="text" class="formInput" id="city" name="city">
+        </div>
+
+
+        <!--country input section-->
+        <div id="countryInput">
+            <label for="country">Country/Region</label><br>
+            <input type="text" class="formInput" id="country" name="country">
+        </div>
+
+        <!--zip input section-->
+        <div id="stateInput">
+            <label for="state">State</label><br>
+            <input type="text" class="formInput" id="state" name="state">
+        </div>
+
+        <!--zip input section-->
+        <div id="zipInput">
+            <label for="state">ZIP Code</label><br>
+            <input type="text" class="formInput" id="zip" name="zip">
+        </div>
+
+        <input type="submit" value="Submit Form">
+    </form>
+</body>
+
+</html>

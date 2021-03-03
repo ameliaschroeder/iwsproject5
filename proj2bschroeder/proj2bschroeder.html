@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Amelia Schroeder 
+     Project 2b (html portion)
+     Due Date: Feb 17
+     Submission date: Feb 16-->
+
+<html lang="en">
+
+<head>
+    <title>Amelia Schroeder Project 2b</title>
+    <script src="proj2bschroeder.js"></script>
+    <link rel="stylesheet" href="stylesheetschroeder1.css">
+
+    <!--banner element-->
+    <div class="banner" id="projban">
+        <p class="bannerName"> Amelia Schroeder</p>
+
+        <h3 class="bannerProjName">IT 238 Project 2b: JSON Lookup Using Ajax</h3>
+
+        <div id="bannerPageLinks">
+            <a href="index.html" class="bannerLink" id="homeLink">Homepage</a>
+            <a href="proj1aschroeder.html" class="bannerLink">Project 1a</a>
+            <a href="proj1bschroeder.html" class="bannerLink">Project 1b</a>
+            <a href="proj2aschroeder.html" class="bannerLink">Project 2a</a>
+            <a href="proj2bschroeder.html" class="bannerLink">Project 2b</a>
+            <a href="proj3schroeder.html" class="bannerLink">Project 3</a>
+            <a href="proj4schroeder.html" class="bannerLink">Project 4</a>
+        </div>
+    </div>
+</head>
+
+
+
+<body>
+    <!--file upload input-->
+    <div id="fileul">
+        <label for="file" class="filelabel">Upload JSON Input File</label><br>
+        <input type="file" id="file"><br><br>
+    </div>
+
+    <div id="cityLookup">
+        <h3>Look up all the Cities In a Given Country and Subcountry</h3>
+        <!--    two text fields to input country and subcountry and then a button to show the cities in that chosen subcountry in a third text field -->
+
+        <!--country input box -->
+        <label for="countryinput" class="alabel">Enter Country Name</label><br>
+        <input type="text" class="longString" id="countryinput"><br><br>
+
+        <!--subcountry input box -->
+        <label for="subctryinput" class="alabel">Enter Subcountry Name (ie Province, State, etc.)</label><br>
+        <input type="text" class="longString" id="subctryinput"><br><br>
+
+        <!--get cities button - button1 - runs getCities()-->
+        <button id="btn1">Get Cities</button> <br><br>
+
+        <!--city name output box - output1 of getCities() -->
+        <textarea id="output1"></textarea><br><br>
+
+    </div>
+    <div id="v1"></div>
+
+    <div id="cityInfo">
+        <h3>Enter a City Name To Find all Instances of That City Name and the Country and Subcountry each belongs to
+        </h3>
+
+        <!--    and then a second seciton where user can input a city and a button where it gives the user the country and subcountry that its a part of-->
+
+        <!--city input box and label -->
+        <label for="cityinput" class="alabel">Enter City Name</label><br>
+        <input type="text" class="longString" id="cityinput"><br><br>
+
+        <!--get city info button - button2 - output 2 of getCityInfo -->
+        <button id="btn2">Get City Info</button><br><br>
+        <textarea id="output2"></textarea><br>
+    </div>
+</body>
+
+</html>
