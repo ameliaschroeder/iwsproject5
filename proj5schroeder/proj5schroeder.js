@@ -33,10 +33,33 @@ function validateForm(e) {
     }
 }
 
+function showDelInstruct(chk) {
 
+
+    var chk = document.getElementById("dInstrucChk");
+    var dInstruc = document.getElementById("dInstruc");
+    var dInstrucLabel = document.getElementById("dInstrucLabel");
+
+    if (chk.checked == true) {
+
+        dInstruc.style.display = "inline";
+        dInstrucLabel.style.display = "inline";
+
+
+    } else {
+        dInstruc.style.display = "none";
+        dInstrucLabel.style.display = "none";
+
+    }
+
+}
 
 function init() {
     var f = document.getElementsByName("orderForm");
     f[0].addEventListener("submit", validateForm);
+
+    showDelInstruct();
+
 }
+
 window.onload = init;

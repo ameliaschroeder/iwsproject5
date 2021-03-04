@@ -78,10 +78,11 @@
 
 
         <div id="dinstrucInput" class="inputDiv">
-            <input type="checkbox" class="formcheck" id="dInstrucChk" name="dInstrucChk">
+            <input type="checkbox" class="formcheck" id="dInstrucChk" name="dInstrucChk"
+                onchange='showDelInstruct(this);'>
             <label for="dInstrucChk">Add Delivery Instructions (Optional)</label><br>
 
-            <label for="dInstruc">Delivery Instructions</label><br>
+            <label for="dInstruc" id="dInstrucLabel">Delivery Instructions:</label><br>
             <input type="text" class="formInput" id="dInstruc" name="dInstruc">
         </div><br><br>
 
