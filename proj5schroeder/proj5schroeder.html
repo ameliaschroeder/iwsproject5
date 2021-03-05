@@ -1,5 +1,10 @@
+<!-- Amelia Schroeder 
+     Project 5 (html portion)
+     Due Date: March 4
+     Submission date: March 4-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="mainContent">
 
 <head>
     <meta charset="UTF-8">
@@ -7,94 +12,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amelia Schroeder Project 5</title>
     <script src="proj5schroeder.js"></script>
+    <link rel="stylesheet" href="stylesheetschroeder1.css">
 </head>
 
 <body>
+    <!--banner element-->
+    <div class="banner" id="projban">
+        <p class="bannerName"> Amelia Schroeder</p>
+
+        <h3 class="bannerProjName">IT 238 Project 5: Submission Form</h3>
+
+        <div id="bannerPageLinks">
+            <a href="index.html" class="bannerLink" id="homeLink">Homepage</a>
+            <a href="proj1aschroeder.html" class="bannerLink">Project 1a</a>
+            <a href="proj1bschroeder.html" class="bannerLink">Project 1b</a>
+            <a href="proj2aschroeder.html" class="bannerLink">Project 2a</a>
+            <a href="proj2bschroeder.html" class="bannerLink">Project 2b</a>
+            <a href="proj3schroeder.html" class="bannerLink">Project 3</a>
+            <a href="proj4schroeder.html" class="bannerLink">Project 4</a>
+            <a href="proj5schroeder.html" class="bannerLink">Project 5</a>
+        </div>
+    </div>
+
+    <!--form container-->
     <form name="orderForm" action="http://ectweb.cs.depaul.edu/sjost/receipt.php" method="POST">
-        <h3>Contact Information</h3>
 
-        <!--email input section-->
-        <div id="emailInput" class="inputDiv reqInputDiv">
-            <label for="email">Email Address</label><br>
-            <input type="text" class="formInput" id="email" name="email">
-            <p id="emailAlertP"></p>
-        </div><br>
+        <div id="contactInfo">
+            <!--contact info container-->
+            <h3>Contact Information</h3>
+            <!--email input section-->
+            <div id="emailInput" class="inputDiv reqInputDiv">
+                <label for="email" class="formLabel">Email Address*</label>
+                <p id="emailAlertP"></p>
+                <br>
+                <input type="text" class="formInput" id="email" name="email">
 
-        <!--phone number input section (optional)-->
-        <div id="phoneInput" class="inputDiv">
-            <label for="phone">Phone Number (Optional)</label><br>
-            <input type="text" class="formInput" id="phone" name="phone">
-        </div><br>
+            </div>
 
-        <h3>Shipping Address</h3>
+            <!--phone number input section (optional)-->
+            <div id="phoneInput" class="inputDiv">
+                <label for="phone" class="formLabel">Phone Number</label><br>
+                <input type="text" class="formInput" id="phone" name="phone">
+            </div><br>
+        </div>
 
-        <!--first name input section-->
-        <div id="fnInput" class="inputDiv reqInputDiv">
-            <label for="firstName">First Name</label> <br>
-            <input type="text" class="formInput required" id="firstName" name="firstName">
-            <p class="alertP">Field is Required</p>
-        </div><br>
+        <!--shipping address container-->
+        <div id="shippingAddress">
+            <h3>Shipping Address</h3>
 
-
-        <!--last name input section-->
-        <div id="lnInput" class="inputDiv reqInputDiv">
-            <label for="lastName">Last Name</label><br>
-            <input type="text" class="formInput required" id="lastName" name="lastName">
-            <p class="alertP">Field is Required</p>
-        </div><br>
-
-        <!--Address Line 1 input Section -->
-        <div id="add1Input" class="inputDiv reqInputDiv">
-            <label for="add1">Address</label><br>
-            <input type="text" class="formInput required" id="add1" name="add1">
-            <p class="alertP">Field is Required</p>
-        </div><br>
-
-        <!--Address Line 2 input section (not required)-->
-        <div id="add2Input" class="inputDiv">
-            <label for="add2">Apartment, suite, etc. (optional)</label><br>
-            <input type="text" class="formInput" id="add2" name="add2">
-        </div><br>
-
-        <!--city input section-->
-        <div id="cityInput" class="inputDiv reqInputDiv">
-            <label for="city">City</label><br>
-            <input type="text" class="formInput required" id="city" name="city">
-            <p class="alertP">Field is Required</p>
-        </div><br>
-
-        <!--state input section-->
-        <div id="stateInput" class="inputDiv reqInputDiv">
-            <label for="state">State</label><br>
-            <input type="text" class="formInput required" id="state" name="state">
-            <p class="alertP">Field is Required</p>
-        </div><br>
-
-        <!--zip input section-->
-        <div id="zipInput" class="inputDiv reqInputDiv">
-            <label for="state">ZIP Code</label><br>
-            <input type="text" class="formInput required" id="zip" name="zip">
-            <p class="alertP">Field is Required</p>
-        </div><br>
-
-        <!--country input section-->
-        <div id="countryInput" class="inputDiv reqInputDiv">
-            <label for="country">Country/Region</label><br>
-            <input type="text" class="formInput required" id="country" name="country">
-            <p class="alertP">Field is Required</p>
-        </div><br>
+            <!--first name input section-->
+            <div id="fnInput" class="inputDiv reqInputDiv">
+                <label for="firstName" class="formLabel">First Name*</label>
+                <p class="alertP">Field is Required</p><br>
+                <input type="text" class="formInput required" id="firstName" name="firstName">
+            </div>
 
 
-        <div id="dinstrucInput" class="inputDiv">
-            <input type="checkbox" class="formcheck" id="dInstrucChk" name="dInstrucChk"
-                onchange='showDelInstruct(this);'>
-            <label for="dInstrucChk">Add Delivery Instructions (Optional)</label><br>
+            <!--last name input section-->
+            <div id="lnInput" class="inputDiv reqInputDiv">
+                <label for="lastName" class="formLabel">Last Name*</label>
+                <p class="alertP">Field is Required</p><br>
+                <input type="text" class="formInput required" id="lastName" name="lastName">
+            </div><br>
 
-            <label for="dInstruc" id="dInstrucLabel">Delivery Instructions:</label><br>
-            <input type="text" class="formInput" id="dInstruc" name="dInstruc">
-        </div><br><br>
+            <!--Address Line 1 input Section -->
+            <div id="add1Input" class="inputDiv reqInputDiv">
+                <label for="add1" class="formLabel">Address*</label>
+                <p class="alertP">Field is Required</p><br>
+                <input type="text" class="formInput required" id="add1" name="add1">
+            </div><br>
 
-        <input type="submit" value="Submit Form">
+            <!--Address Line 2 input section (not required)-->
+            <div id="add2Input" class="inputDiv">
+                <label for="add2" class="formLabel">Apartment, suite, etc.</label><br>
+                <input type="text" class="formInput" id="add2" name="add2">
+            </div><br>
+
+            <!--city input section-->
+            <div id="cityInput" class="inputDiv reqInputDiv">
+                <label for="city" class="formLabel">City*</label>
+                <p class="alertP">Field is Required</p><br>
+                <input type="text" class="formInput required" id="city" name="city">
+
+            </div><br>
+
+            <!--state input section-->
+            <div id="stateInput" class="inputDiv reqInputDiv">
+                <label for="state" class="formLabel">State*</label>
+                <p class="alertP">Field is Required</p><br>
+                <input type="text" class="formInput required" id="state" name="state">
+            </div><br>
+
+            <!--zip input section-->
+            <div id="zipInput" class="inputDiv reqInputDiv">
+                <label for="state" class="formLabel">ZIP Code*</label>
+                <p class="alertP">Field is Required</p><br>
+                <input type="text" class="formInput required" id="zip" name="zip">
+            </div><br>
+
+            <!--country input section-->
+            <div id="countryInput" class="inputDiv reqInputDiv">
+                <label for="country" class="formLabel">Country/Region*</label>
+                <p class="alertP">Field is Required</p>
+                <br>
+                <input type="text" class="formInput required" id="country" name="country">
+            </div><br>
+
+            <!--Delivery Instrucitons container-->
+            <div id="dinstrucInput" class="inputDiv">
+                <!--checkbox to display delivery instructions textarea-->
+                <input type="checkbox" class="formcheck" id="dInstrucChk" name="dInstrucChk"
+                    onchange='showDelInstruct(this);'>
+                <label for="dInstrucChk" class="formLabel">Add Delivery Instructions</label><br>
+
+                <!--delivery instructions input section-->
+                <label for="dInstruc" id="dInstrucLabel" class="formLabel">Delivery Instructions:</label><br>
+                <textarea rows="5" class="formInput" id="dInstruc" name="dInstruc"></textarea>
+            </div><br><br>
+        </div>
+        <input type="submit" value="Submit" id="submit_btn">
     </form>
 </body>
 
